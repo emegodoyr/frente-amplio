@@ -19,7 +19,6 @@
   </span>
   </div>
   <div class="col-md-4">
-  <h4 class="cuantasFirmas">Llevamos <?php echo $firmas; ?> firmas</h4>
 
 
 <div class="well">
@@ -52,7 +51,7 @@
 
 </div>
 <h4>
-<small><?php echo $aclaracion_datos; ?></small>
+<small>Los datos solicitados serán utilizados estrictamente para fines de comunicarnos contigo y enviarte información sobre la conformación del frente amplio.</small>
 </h4>
 
  </div>

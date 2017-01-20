@@ -7,8 +7,6 @@ if(isset($_POST["enviar"])) {
   $_POST['apellidos'] = strip_tags($_POST['apellidos']);
   $_POST['email'] = strip_tags($_POST['email']);
   $_POST['rut'] = strip_tags($_POST['rut']);
-  $_POST['recibeMails'] = strip_tags($_POST['recibeMails']);
-  $_POST['como_te_enteraste'] = strip_tags($_POST['como_te_enteraste']);
 
   echo 'llegue';
   return FALSE;
