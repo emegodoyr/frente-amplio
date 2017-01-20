@@ -1,0 +1,108 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   @font-face {
+   font-family: 'Anders';
+   src:
+   url('../fonts/Andesregular.otf') format('truetype'),
+   url('../fonts/Andesregular.otf') format('svg');
+    }
+
+   @font-face {
+   font-family: 'Andes Black';
+   src:  url('../fonts/Andesblack.otf') format('truetype');
+   }
+
+   body {
+     font-family: 'Anders', 'Bree Serif', sans-serif;
+     background: url('../img/fondo.png') left top no-repeat;
+   }
+
+
+h1, h2, h3 {
+font-family: 'Andes Black', serif;
+
+}
+.container {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.cuantasFirmas {
+display: block;
+  text-align: center;
+margin: 15px auto;
+font-size: 1.7em;
+}
+
+.encabezado {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.texto {
+padding-left: 30px;
+}
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  margin-top: 10px;
+}
+
+
+.logos {
+  text-align: center;
+  margin-top: 5px;
+}
+.logos img{
+margin: 5px;
+width: 90px;
+}
+.socialButtons {
+  text-align: right;
+  margin-top: 10px;
+}
+.socialButtons img {
+  margin: 5px;
+  width: 49px;
+}
+
+.comparte img {
+width: 55px;
+}
+
+.gracias {
+text-align: center;
+}
+
+.textocompartir {
+font-size: 2em;
+}
+
+.textoConvocatoria {
+font-size: 1.3em;
+text-align: justify;
+}
+
+.Quienes-Somos img,.quienesimg  {
+text-align: center;
+float: left;
+margin: 5px;
+}
+
+
+h3 {
+  margin-top:-7px!important;
+}
+
+
+
+@media only screen and (max-device-width: 480px) {
+
+.encabezado { text-align: center;}
+.socialButtons { margin-top: 0px;
+}
+	}
