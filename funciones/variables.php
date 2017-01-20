@@ -30,18 +30,7 @@ $aclaracion_datos = 'Los datos solicitados serán utilizados estrictamente para 
 $mensaje_agradecimiento = 'Con tu firma optamos a un mejor Chile...';
 
 
-$nombres_orgas = array(
-  'Izquierda Libertaria' => 'https://www.facebook.com/izqlibertaria/',
-  'Movimiento Autonomista' => 'https://www.facebook.com/Movimiento.Autonomista/',
-  'Nueva Democracia' => 'https://www.facebook.com/NuevaDemocraciaChile/',
-  'Revolucion Democratica' => 'https://www.facebook.com/RevolucionDemocraticaChile/',
-  'Izquierda Autonoma' => 'https://www.facebook.com/izquierda.autonoma/',
-  'Convergencia de Izquierdas' => 'https://www.facebook.com/convergenciadeizquierdas/?fref=ts',
-  'Partido Igualdad' => 'https://www.facebook.com/Partido.Igualdad/?fref=ts',
-  'Partido Ecologista Verde' => 'https://www.facebook.com/PartidoEcologistaVerde/?fref=ts',
-  'Partido Humanista' => 'https://www.facebook.com/PartidoHumanistaChile/?fref=ts',
-  'Partido Poder' => 'https://www.facebook.com/PoderChile',
-  'Partido Liberal' => 'https://www.facebook.com/PartidoLiberaldeChile/?fref=ts');
+
 
 
 

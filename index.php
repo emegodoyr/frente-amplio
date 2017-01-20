@@ -134,7 +134,32 @@ Frente Amplio
   <div class="row logos">
     <?php
 
-    include 'modulos/piedepagina.php';
+    $nombres_orgas = array(
+    'Izquierda Libertaria' => 'https://www.facebook.com/izqlibertaria/',
+    'Movimiento Autonomista' => 'https://www.facebook.com/Movimiento.Autonomista/',
+    'Nueva Democracia' => 'https://www.facebook.com/NuevaDemocraciaChile/',
+    'Revolucion Democratica' => 'https://www.facebook.com/RevolucionDemocraticaChile/',
+    'Izquierda Autonoma' => 'https://www.facebook.com/izquierda.autonoma/',
+    'Convergencia de Izquierdas' => 'https://www.facebook.com/convergenciadeizquierdas/?fref=ts',
+    'Partido Igualdad' => 'https://www.facebook.com/Partido.Igualdad/?fref=ts',
+    'Partido Ecologista Verde' => 'https://www.facebook.com/PartidoEcologistaVerde/?fref=ts',
+    'Partido Humanista' => 'https://www.facebook.com/PartidoHumanistaChile/?fref=ts',
+    'Partido Poder' => 'https://www.facebook.com/PoderChile',
+    'Partido Liberal' => 'https://www.facebook.com/PartidoLiberaldeChile/?fref=ts');
+
+    foreach ($nombres_orgas as $nombres_orgas => $url_orgas) {
+      $logos[] = '
+      <a href="'.$url_orgas.'" target="_blank">
+      <img src="img/logos/'.$nombres_orgas.'.png" alt="'.$nombres_orgas.'" title="'.$nombres_orgas.'" />
+      </a>';
+    }
+    // aleatoriza el orden
+    shuffle($logos);
+
+    // despliega los logos aleatoreamente
+    for ($a=0; $a <= 10; $a++) {
+      echo $logos[$a];
+    }
 
      ?>
   </div>
@@ -150,7 +175,7 @@ Frente Amplio
         <script src="js/jquery.validation.js"></script>
         <script src="js/main.js"></script>
         <script src="js/submit_form.js"></script>
-s
+
         <!-- PENDIENTE Google Analytics-->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
