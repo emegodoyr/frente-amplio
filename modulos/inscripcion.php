@@ -10,6 +10,9 @@ if(isset($_POST["enviar"])) {
   $_POST['recibeMails'] = strip_tags($_POST['recibeMails']);
   $_POST['como_te_enteraste'] = strip_tags($_POST['como_te_enteraste']);
 
+  echo 'llegue';
+  return FALSE;
+
 if($_POST['nombres']=="") {
   echo "<script> alert('Debes indicar tu nombre'); history.back(-1); </script>";
 exit();

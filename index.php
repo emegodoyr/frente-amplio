@@ -97,7 +97,7 @@ Frente Amplio
       <div class="well">
       <h3>Súmate a esta convocatoria</h3>
 
-      <form id"core-form">
+      <form id="core-form">
       <input type="hidden" name="enviar" value="1">
       <div class="form-group">
       <label for="nombres">Nombres:</label>
@@ -133,9 +133,9 @@ Frente Amplio
 
   <div class="row logos">
     <?php
-    if ($seccion!='Quienes-Somos') {
+
     include 'modulos/piedepagina.php';
-    }
+
      ?>
   </div>
       <hr>

@@ -1,3 +1,3 @@
 (function($){
-  $('#core-form').ajaxForm({url: 'server.php', type: 'post'})
+  $('#core-form').ajaxForm({url: '../modulos/inscripcion.php', type: 'post'})
 })(jQuery)
