@@ -95,9 +95,9 @@ Frente Amplio
 
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 content">
           <h1>Te invitamos a construir Frente Amplio</h1>
-      <span class="textoConvocatoria">
+      <div class="textoConvocatoria">
 <p>Nuestro país se encuentra frente al agotamiento del proceso de más de 26 años en el que se ha impedido la expresión de la soberanía popular en las instituciones y en la toma de decisiones públicas, lo que se ha traducido en el predominio del gran empresariado en contra de los intereses de la mayoría social. Este proceso fue incapaz de crear las condiciones necesarias para avanzar hacia un país con una democracia plena, capaz a su vez de superar las enormes desigualdades existentes en distintos ámbitos de la vida, pero en particular en aquellos relacionados con los derechos más básicos de las chilenas y chilenos. Son 26 años de una creciente elitización del sistema político, cada vez más ajeno a las grandes mayorías nacionales. Esto ha generado una enorme crisis de legitimidad y representatividad, donde los problemas de corrupción y colusión empresarial son sus expresiones más incómodas y visibles.</p>
 
 <p>Este creciente malestar en diferentes franjas sociales ha permitido la emergencia de un conjunto de liderazgos, fuerzas e iniciativas políticas y sociales que persiguen el objetivo de intervenir y participar del espacio político para transformar la sociedad y avanzar hacia más democracia, más libertades, más igualdad social e igualdad entre géneros y más protección de los ecosistemas que sustentan la vida en común. Por ahora, sin embargo, dichas instancias han operado de modo discontinuo, fragmentado y localizado, lo que ha impedido la constitución de un espacio político alternativo a los dos grandes bloques en el que pueda reconocerse la mayoría social, la que ha optado en una medida importante por sustraerse de la participación política. Es nuestra misión construir un punto de referencia para las iniciativas transformadoras. Por ello nos orientamos hacia la conformación de un movimiento político y social amplio que permita hacer converger, en su diversidad, todos los esfuerzos y las voluntades que permitan cambiar democráticamente la estructuras desiguales de poder en Chile, y que sea una fuerza política con opción real de gobernar y de legislar en beneficio de la mayoría social, antes que permanecer sólo en el terreno testimonial.</p>
@@ -115,7 +115,7 @@ Frente Amplio
     <li>Un programa construido democráticamente como base de la unidad.</li>
 </ol>
 
-        </span>
+        </div>
         </div>
         <div class="col-md-4">
 
