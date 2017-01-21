@@ -68,6 +68,19 @@ Frente Amplio
       <a class="facebook popup" href="https://www.facebook.com/sharer/sharer.php?u=http://www.frente-amplio.cl/">
         <img  src="http://www.movimientoautonomista.cl/frenteampliomuestra/img/facebook.png"  alt="" />
       </a>
+      
+      
+      <?php
+      
+        $host= $_SERVER["HTTP_HOST"];
+        $url= $_SERVER["REQUEST_URI"];
+        $url = "http://" . $host . $url;
+
+        // whatsapp
+        $mensaje_compartir_wsp = 'Te invitamos a construir Frente Amplio ' . $url;
+      
+      ?>
+      
       <a href="whatsapp://send?text=<?php echo $mensaje_compartir_wsp; ?>">
         <img  src="http://www.movimientoautonomista.cl/frenteampliomuestra/img/whatsapp.png"  alt="" />
       </a>
