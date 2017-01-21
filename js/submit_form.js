@@ -21,10 +21,8 @@ url: "modulos/inscripcion.php",
 data: dataString,
 cache: false,
 success: function(result){
-if(result.status){
     $('#core-form').remove();
     $('#refactor').append('<p>Tus datos estan siendo procesados. Ahora comparte esta convocatoria con los tuyos.</p>')
-  }
 }
 });
 }
