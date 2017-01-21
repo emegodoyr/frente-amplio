@@ -2,8 +2,8 @@
   $(document).ready(function(){
 $("#submit").click(function(){
   var dataString = {};
-  dataString.name = $("#nombres").val();
-  dataString.lastname = $('#apellidos').val();
+  dataString.nombres = $("#nombres").val();
+  dataString.apellidos = $('#apellidos').val();
   dataString.rut = $('#rut').val();
   dataString.email = $('#email').val();
 // Returns successful data submission message when the entered information is stored in database.
@@ -17,11 +17,12 @@ else
 // AJAX Code To Submit Form.
 $.ajax({
 type: "POST",
-url: "../modulos/inscripcion.php",
+url: "modulos/inscripcion.php",
 data: dataString,
 cache: false,
 success: function(result){
-alert(result);
+//alert(result);
+console.log(result);
 }
 });
 }
