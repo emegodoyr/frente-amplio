@@ -121,12 +121,12 @@ Frente Amplio
 
 
       <div class="well">
-      <h3>Súmate a esta convocatoria</h3>
+      <h3>Súmate a la convocatoria</h3>
 
       <form id="core-form">
       <input type="hidden" name="enviar" value="1">
       <div class="form-group">
-      <label for="nombres">Nombres:</label>
+      <label for="nombres">Nombre:</label>
       <input type="text" class="form-control" id="nombres" name="nombres">
       </div>
       <div class="form-group">
@@ -143,14 +143,14 @@ Frente Amplio
       </div>
 
       <div class="checkbox">
-      <label><input type="checkbox" checked name="recibirMails" value="si"> Estoy de acuerdo en recibir información sobre el Frente Amplio.</label>
+      <label><input type="checkbox" checked name="recibirMails" value="si"> Quiero recibir información sobre el Frente Amplio.</label>
       </div>
       <button id="submit" type="submit" class="btn btn-success btn-block">Firmar la convocatoria</button>
       </form>
 
       </div>
       <h4>
-      <small>Los datos solicitados serán utilizados estrictamente para fines de comunicarnos contigo y enviarte información sobre la conformación del frente amplio.</small>
+      <small>Los datos serán cuidadosamente resguardos y utilizados estrictamente para invitarte a participar en la conformación del frente amplio.</small>
       </h4>
 
        </div>
