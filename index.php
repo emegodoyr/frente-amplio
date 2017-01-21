@@ -68,19 +68,19 @@ Frente Amplio
       <a class="facebook popup" href="https://www.facebook.com/sharer/sharer.php?u=http://www.frente-amplio.cl/">
         <img  src="img/facebook.png"  alt="" />
       </a>
-      
-      
+
+
       <?php
-      
+
         $host= $_SERVER["HTTP_HOST"];
         $url= $_SERVER["REQUEST_URI"];
         $url = "http://" . $host . $url;
 
         // whatsapp
         $mensaje_compartir_wsp = 'Te invitamos a construir Frente Amplio ' . $url;
-      
+
       ?>
-      
+
       <a href="whatsapp://send?text=<?php echo $mensaje_compartir_wsp; ?>">
         <img  src="img/whatsapp.png"  alt="" />
       </a>
@@ -120,7 +120,7 @@ Frente Amplio
         <div class="col-md-4">
 
 
-      <div class="well">
+      <div id="refactor" class="well">
       <h3>Súmate a la convocatoria</h3>
 
       <form id="core-form">
