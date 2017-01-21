@@ -120,7 +120,7 @@ Frente Amplio
         <div class="col-md-4">
 
 
-      <div class="well">
+      <div id="refactor" class="well">
       <h3>Súmate a la convocatoria</h3>
 
       <form id="core-form">
