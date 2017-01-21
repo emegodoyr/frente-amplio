@@ -145,7 +145,7 @@ Frente Amplio
       <div class="checkbox">
       <label><input type="checkbox" checked name="recibirMails" value="si"> Quiero recibir información sobre el Frente Amplio.</label>
       </div>
-      <button id="submit" type="submit" class="btn btn-success btn-lg">Firmar la convocatoria</button>
+      <button id="submit" type="submit" class="btn btn-success btn-lg btn-block">Firmar la convocatoria</button>
       </form>
 
       </div>
