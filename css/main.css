@@ -28,6 +28,9 @@ font-family: 'Andes Black', serif;
 .container {
   background: rgba(255, 255, 255, 0.9);
 }
+.content {
+  padding: 20px 45px;
+}
 
 .cuantasFirmas {
 display: block;
@@ -84,7 +87,7 @@ font-size: 2em;
 
 .textoConvocatoria {
 font-size: 1.3em;
-text-align: justify;
+/*text-align: justify;*/
 }
 
 .Quienes-Somos img,.quienesimg  {
