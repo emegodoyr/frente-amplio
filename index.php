@@ -96,7 +96,7 @@ Frente Amplio
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <h2>Te invitamos a construir Frente Amplio</h2>
+          <h1>Te invitamos a construir Frente Amplio</h1>
       <span class="textoConvocatoria">
 <p>Nuestro país se encuentra frente al agotamiento del proceso de más de 26 años en el que se ha impedido la expresión de la soberanía popular en las instituciones y en la toma de decisiones públicas, lo que se ha traducido en el predominio del gran empresariado en contra de los intereses de la mayoría social. Este proceso fue incapaz de crear las condiciones necesarias para avanzar hacia un país con una democracia plena, capaz a su vez de superar las enormes desigualdades existentes en distintos ámbitos de la vida, pero en particular en aquellos relacionados con los derechos más básicos de las chilenas y chilenos. Son 26 años de una creciente elitización del sistema político, cada vez más ajeno a las grandes mayorías nacionales. Esto ha generado una enorme crisis de legitimidad y representatividad, donde los problemas de corrupción y colusión empresarial son sus expresiones más incómodas y visibles.</p>
 
@@ -113,6 +113,7 @@ Frente Amplio
     <li>Ser alternativa al duopolio conformado por la Derecha y la Nueva Mayoría.</li>
     <li>Independencia total  del poder empresarial.</li>
     <li>Un programa construido democráticamente como base de la unidad.</li>
+</ol>
 
         </span>
         </div>
@@ -120,12 +121,12 @@ Frente Amplio
 
 
       <div class="well">
-      <h3>Súmate a esta convocatoria</h3>
+      <h3>Súmate a la convocatoria</h3>
 
       <form id="core-form">
       <input type="hidden" name="enviar" value="1">
       <div class="form-group">
-      <label for="nombres">Nombres:</label>
+      <label for="nombres">Nombre:</label>
       <input type="text" class="form-control" id="nombres" name="nombres">
       </div>
       <div class="form-group">
@@ -142,14 +143,14 @@ Frente Amplio
       </div>
 
       <div class="checkbox">
-      <label><input type="checkbox" checked name="recibirMails" value="si"> Estoy de acuerdo en recibir información sobre el Frente Amplio.</label>
+      <label><input type="checkbox" checked name="recibirMails" value="si"> Quiero recibir información sobre el Frente Amplio.</label>
       </div>
-      <button id="submit" type="submit" class="btn btn-success btn-block">Firmar la convocatoria</button>
+      <button id="submit" type="submit" class="btn btn-success btn-lg">Firmar la convocatoria</button>
       </form>
 
       </div>
       <h4>
-      <small>Los datos solicitados serán utilizados estrictamente para fines de comunicarnos contigo y enviarte información sobre la conformación del frente amplio.</small>
+      <small>Los datos serán cuidadosamente resguardos y utilizados estrictamente para invitarte a participar en la conformación del frente amplio.</small>
       </h4>
 
        </div>
@@ -194,13 +195,10 @@ Frente Amplio
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/jquery.Rut.js"></script>
         <script src="js/jquery.validation.js"></script>
         <script src="js/main.js"></script>
         <script src="js/submit_form.js"></script>
-
-    
     </body>
 </html>
