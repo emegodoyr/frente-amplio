@@ -29,7 +29,7 @@ font-family: 'Andes Black', serif;
   background: rgba(255, 255, 255, 0.9);
 }
 .content {
-  padding: 20px 45px;
+  padding: 0px 45px;
 }
 
 .cuantasFirmas {
@@ -100,7 +100,9 @@ margin: 5px;
 h3 {
   margin-top:-7px!important;
 }
-
+#refactor {
+    margin-top: 20px;
+}
 
 
 @media only screen and (max-device-width: 480px) {
