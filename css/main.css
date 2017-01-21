@@ -109,3 +109,8 @@ h3 {
 .socialButtons { margin-top: 0px;
 }
 	}
+@media (min-width: 992px){
+.col-md-4{
+        float: right;
+}
+}
