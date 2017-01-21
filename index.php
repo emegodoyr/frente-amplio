@@ -63,10 +63,10 @@ Frente Amplio
   <div class="col-md-4 socialButtons">
     <p>
       <a class="twitter popup" href="http://twitter.com/share?text=<?php echo $mensaje_compartir_tw; ?>">
-        <img src="http://www.movimientoautonomista.cl/frenteampliomuestra/img/twitter.png" alt="" />
+        <img src="img/twitter.png" alt="" />
       </a>
       <a class="facebook popup" href="https://www.facebook.com/sharer/sharer.php?u=http://www.frente-amplio.cl/">
-        <img  src="http://www.movimientoautonomista.cl/frenteampliomuestra/img/facebook.png"  alt="" />
+        <img  src="img/facebook.png"  alt="" />
       </a>
       
       
@@ -82,11 +82,11 @@ Frente Amplio
       ?>
       
       <a href="whatsapp://send?text=<?php echo $mensaje_compartir_wsp; ?>">
-        <img  src="http://www.movimientoautonomista.cl/frenteampliomuestra/img/whatsapp.png"  alt="" />
+        <img  src="img/whatsapp.png"  alt="" />
       </a>
       </p>
 <p>
-  Comparte esta convocatoria
+  Comparte esta convocatoria.
 </p>
   </div>
 </div>
