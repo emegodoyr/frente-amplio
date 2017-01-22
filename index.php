@@ -10,7 +10,7 @@
         <meta name="description" content="<?php echo $descripcion_pagina; ?>">  <!-- pendiente texto -->
         <meta property="og:title" content="<?php echo $titulo_share; ?>" />  <!-- pendiente texto -->
         <meta property="og:description" content="<?php echo $descripcion_share; ?>" />  <!-- pendiente texto -->
-        <meta property="og:image" content="http://www.frente-amplio.cl/img/logo.png" />
+        <meta property="og:image" content="http://www.frente-amplio.cl/img/frenteampliofacebook.png" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="315" />
         <meta property="og:url" content="http://www.frente-amplio.cl" />
