@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="css/main.css?<?php echo $marca_corta; ?>">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	</head>
-    <body>
+    <body lang="es">
         <!-- PENDIENTE Google Analytics-->
         <script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -62,32 +62,42 @@
 				</div>
 				<div class="col-md-4 socialButtons">
 					<p>
-						<a class="twitter popup" href="http://twitter.com/share?text=<?php echo $mensaje_compartir_tw; ?>">
-							<img src="img/twitter.png" alt="" />
-						</a>
-						<a class="facebook popup" href="https://www.facebook.com/sharer/sharer.php?u=http://www.frente-amplio.cl/">
-							<img  src="img/facebook.png"  alt="" />
-						</a>
-						
-						
 						<?php
 							
-							$host= $_SERVER["HTTP_HOST"];
-							$url= $_SERVER["REQUEST_URI"];
-							$url = "http://" . $host . $url;
-							
-							// whatsapp
-							$mensaje_compartir_wsp = 'Te invitamos a construir Frente Amplio ' . $url;
+							$host= "http://".$_SERVER["HTTP_HOST"];
+							$uri= $_SERVER["REQUEST_URI"];
+							$url = $host . $uri;
+							// whatsapp y twitter
+							$mensaje_compartir = 'Te invitamos a construir Frente Amplio ';
+							$miuseragent=$_SERVER['HTTP_USER_AGENT']; //Busco el "userAgent" del usuario
+							//lista de palabras del "userAgent" en los móviles
+							$moviles=array("Mobile","iPhone","iPod","BlackBerry","Opera Mini","Sony","MOT","Nokia","samsung");
+							$detector=0; //variable para detectar si el usuario utiliza un móvil (0=no, 1=si);
+							$numMoviles=count($moviles); //número de palabras en la lista
+							for ($i=0;$i<$numMoviles;$i++) { //comprobar en la lista ...
+								$comprobar=strpos($miuseragent,$moviles[$i]);
+								if ($comprobar!="") { //si detectamos un móvil ...
+									$detector=1; //cambiamos la variable de detección.
+								}
+							}
+							if ($detector==1) { //si es un móvil.
+								$mensaje_compartir = $mensaje_compartir . $host;
+							}
 							
 						?>
+						<a class="twitter popup" href="http://twitter.com/share?text=<?php echo $mensaje_compartir; ?>">
+							<img src="img/twitter.png" alt="twitter" />
+						</a>
 						
-						<a href="whatsapp://send?text=<?php echo $mensaje_compartir_wsp; ?>">
-							<img  src="img/whatsapp.png"  alt="" />
+						<a class="facebook popup" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $host; ?>">
+							<img  src="img/facebook.png"  alt="facebook" />
+						</a>
+						
+						<a href="whatsapp://send?text=<?php echo $mensaje_compartir; ?>">
+							<img  src="img/whatsapp.png"  alt="whatsapp" />
 						</a>
 					</p>
-					<p>
-						Comparte esta convocatoria.
-					</p>
+					<p>Comparte esta convocatoria.</p>
 				</div>
 			</div>
 		</div>
@@ -101,28 +111,33 @@
 				<div class="col-md-4">
 					<div id="refactor" class="well">
 						<h3 class="visible-md visible-lg">Súmate a la convocatoria</h3>
-						
-						<form id="core-form">
+						<div class="message"></div>
+						<form id="core-form" role="form" data-toggle="validator">
 							<input type="hidden" name="enviar" value="1">
 							<div class="form-group">
 								<label for="nombres">Nombre:</label>
-								<input type="text" class="form-control" id="nombres" name="nombres">
+								<input type="text" class="form-control" id="nombres" name="nombres" placeholder="Juan" data-error="Ingresa un nombre." required>
+								<div class="help-block with-errors"></div>
 							</div>
 							<div class="form-group">
 								<label for="apellidos">Apellidos:</label>
-								<input type="text" class="form-control" id="apellidos" name="apellidos">
+								<input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Perez Peralta" data-error="Ingresa un apellido." required>
+								<div lang="es" class="help-block with-errors"></div>
 							</div>
 							<div class="form-group">
 								<label for="rut">Rut:</label>
-								<input type="text" class="form-control" id="rut" name="rut">
+								<input type="text" class="form-control" pattern="[0-9]{1,2}.[0-9]{3}.[0-9]{3}-[0-9Kk]{1}" id="rut" name="rut" placeholder="12.312.312-3" data-error="Ingresa un rut." required>
+								<div class="help-block with-errors help-rut"></div>
 							</div>
 							<div class="form-group">
 								<label for="email">Correo electrónico:</label>
-								<input type="email" class="form-control" id="email" name="email">
+								<input type="email" class="form-control" id="email" name="email" placeholder="jperez@correo.cl" data-error="Ingresa un correo valido." required>
+								<div class="help-block with-errors"></div>
 							</div>
 							
 							<div class="checkbox">
 								<label><input type="checkbox" checked name="recibirMails" value="si"> Quiero recibir información sobre el Frente Amplio.</label>
+								<div class="help-block with-errors"></div>
 							</div>
 							<button id="submit" type="submit" class="btn btn-success btn-lg btn-block">Firmar la convocatoria</button>
 						</form>
@@ -194,12 +209,18 @@
 			<footer>
 				<p>Frente Amplio 2017 / www.frente-amplio.cl </p>
 			</footer>
-		</div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		</div> <!-- /container -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/jquery.Rut.js"></script>
-        <script src="js/jquery.validation.js"></script>
+		
+		<script src="js/vendor/validator.min.js"></script>
+		<script src="js/jquery.Rut.js"></script>
+        <!--<script src="js/jquery.validation.js"></script>-->
         <script src="js/main.js"></script>
+		
         <script src="js/submit_form.js"></script>
+		
+		
 	</body>
 </html>
